@@ -1,0 +1,6 @@
+rootProject.name = 'Cloud'
+include ':ConfServer'
+include ':eureka'
+
+project(':ConfServer').projectDir = "$rootDir/ConfServer" as File
+project(':eureka').projectDir = "$rootDir/eureka" as File
